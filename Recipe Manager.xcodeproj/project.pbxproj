@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		830507F51EB0611900F2541C /* tabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830507F41EB0611900F2541C /* tabBarViewController.swift */; };
+		830507F71EB0647600F2541C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830507F61EB0647600F2541C /* CameraViewController.swift */; };
+		830507F91EB0658B00F2541C /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830507F81EB0658B00F2541C /* ImageStore.swift */; };
+		830508261EB0899E00F2541C /* MainImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830508251EB0899E00F2541C /* MainImageTableViewCell.swift */; };
+		8305082A1EB089C300F2541C /* InstructionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830508291EB089C300F2541C /* InstructionsTableViewCell.swift */; };
+		830508301EB25A8200F2541C /* addIngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305082F1EB25A8200F2541C /* addIngredientTableViewCell.swift */; };
+		830508331EB25B9900F2541C /* AddIngredientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830508321EB25B9900F2541C /* AddIngredientTableViewController.swift */; };
+		830508361EB5251F00F2541C /* addInstructionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830508351EB5251F00F2541C /* addInstructionsTableViewController.swift */; };
+		830508381EB5253400F2541C /* addInstructionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830508371EB5253400F2541C /* addInstructionTableViewCell.swift */; };
+		8305083A1EB5456F00F2541C /* addedInstructionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830508391EB5456F00F2541C /* addedInstructionsTableViewCell.swift */; };
+		83AAA7F61EA9C4D200ADE0DD /* NewRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AAA7F51EA9C4D200ADE0DD /* NewRecipeViewController.swift */; };
 		83B20B821EA70F9900C323D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B20B811EA70F9900C323D3 /* AppDelegate.swift */; };
 		83B20B851EA70F9900C323D3 /* Recipe_Manager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83B20B831EA70F9900C323D3 /* Recipe_Manager.xcdatamodeld */; };
 		83B20B871EA70F9900C323D3 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B20B861EA70F9900C323D3 /* MasterViewController.swift */; };
@@ -17,6 +28,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		830507F41EB0611900F2541C /* tabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabBarViewController.swift; sourceTree = "<group>"; };
+		830507F61EB0647600F2541C /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		830507F81EB0658B00F2541C /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
+		830508251EB0899E00F2541C /* MainImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainImageTableViewCell.swift; sourceTree = "<group>"; };
+		830508291EB089C300F2541C /* InstructionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsTableViewCell.swift; sourceTree = "<group>"; };
+		8305082F1EB25A8200F2541C /* addIngredientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addIngredientTableViewCell.swift; sourceTree = "<group>"; };
+		830508321EB25B9900F2541C /* AddIngredientTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddIngredientTableViewController.swift; sourceTree = "<group>"; };
+		830508351EB5251F00F2541C /* addInstructionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addInstructionsTableViewController.swift; sourceTree = "<group>"; };
+		830508371EB5253400F2541C /* addInstructionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addInstructionTableViewCell.swift; sourceTree = "<group>"; };
+		830508391EB5456F00F2541C /* addedInstructionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addedInstructionsTableViewCell.swift; sourceTree = "<group>"; };
+		83AAA7F51EA9C4D200ADE0DD /* NewRecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewRecipeViewController.swift; sourceTree = "<group>"; };
 		83B20B7E1EA70F9900C323D3 /* Recipe Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B20B811EA70F9900C323D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83B20B841EA70F9900C323D3 /* Recipe_Manager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Recipe_Manager.xcdatamodel; sourceTree = "<group>"; };
@@ -39,6 +61,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		830508241EB088FD00F2541C /* Recipe Editor */ = {
+			isa = PBXGroup;
+			children = (
+				830507F41EB0611900F2541C /* tabBarViewController.swift */,
+				830507F61EB0647600F2541C /* CameraViewController.swift */,
+				830508251EB0899E00F2541C /* MainImageTableViewCell.swift */,
+				830508291EB089C300F2541C /* InstructionsTableViewCell.swift */,
+				830508341EB524DD00F2541C /* Add Instructions */,
+				830508311EB25B8000F2541C /* Add Ingredients */,
+			);
+			name = "Recipe Editor";
+			sourceTree = "<group>";
+		};
+		830508311EB25B8000F2541C /* Add Ingredients */ = {
+			isa = PBXGroup;
+			children = (
+				830508321EB25B9900F2541C /* AddIngredientTableViewController.swift */,
+				8305082F1EB25A8200F2541C /* addIngredientTableViewCell.swift */,
+			);
+			name = "Add Ingredients";
+			sourceTree = "<group>";
+		};
+		830508341EB524DD00F2541C /* Add Instructions */ = {
+			isa = PBXGroup;
+			children = (
+				830508351EB5251F00F2541C /* addInstructionsTableViewController.swift */,
+				830508391EB5456F00F2541C /* addedInstructionsTableViewCell.swift */,
+				830508371EB5253400F2541C /* addInstructionTableViewCell.swift */,
+			);
+			name = "Add Instructions";
+			sourceTree = "<group>";
+		};
 		83B20B751EA70F9900C323D3 = {
 			isa = PBXGroup;
 			children = (
@@ -61,7 +115,10 @@
 				83B20B811EA70F9900C323D3 /* AppDelegate.swift */,
 				83B20B861EA70F9900C323D3 /* MasterViewController.swift */,
 				83B20B881EA70F9900C323D3 /* DetailViewController.swift */,
+				83AAA7F51EA9C4D200ADE0DD /* NewRecipeViewController.swift */,
+				830507F81EB0658B00F2541C /* ImageStore.swift */,
 				83B20B8A1EA70F9900C323D3 /* Main.storyboard */,
+				830508241EB088FD00F2541C /* Recipe Editor */,
 				83B20B8D1EA70F9900C323D3 /* Assets.xcassets */,
 				83B20B8F1EA70F9900C323D3 /* LaunchScreen.storyboard */,
 				83B20B921EA70F9900C323D3 /* Info.plist */,
@@ -102,7 +159,7 @@
 				TargetAttributes = {
 					83B20B7D1EA70F9900C323D3 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 266548894Y;
+						DevelopmentTeam = ECQ6ASBPZ3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -143,10 +200,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830507F51EB0611900F2541C /* tabBarViewController.swift in Sources */,
 				83B20B821EA70F9900C323D3 /* AppDelegate.swift in Sources */,
 				83B20B851EA70F9900C323D3 /* Recipe_Manager.xcdatamodeld in Sources */,
+				830508261EB0899E00F2541C /* MainImageTableViewCell.swift in Sources */,
+				830508301EB25A8200F2541C /* addIngredientTableViewCell.swift in Sources */,
+				830507F91EB0658B00F2541C /* ImageStore.swift in Sources */,
+				830508361EB5251F00F2541C /* addInstructionsTableViewController.swift in Sources */,
+				8305082A1EB089C300F2541C /* InstructionsTableViewCell.swift in Sources */,
 				83B20B871EA70F9900C323D3 /* MasterViewController.swift in Sources */,
+				8305083A1EB5456F00F2541C /* addedInstructionsTableViewCell.swift in Sources */,
+				830507F71EB0647600F2541C /* CameraViewController.swift in Sources */,
+				830508381EB5253400F2541C /* addInstructionTableViewCell.swift in Sources */,
 				83B20B891EA70F9900C323D3 /* DetailViewController.swift in Sources */,
+				83AAA7F61EA9C4D200ADE0DD /* NewRecipeViewController.swift in Sources */,
+				830508331EB25B9900F2541C /* AddIngredientTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 266548894Y;
+				DEVELOPMENT_TEAM = ECQ6ASBPZ3;
 				INFOPLIST_FILE = "Recipe Manager/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.wsu.vancouver.Recipe-Manager";
@@ -284,7 +352,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 266548894Y;
+				DEVELOPMENT_TEAM = ECQ6ASBPZ3;
 				INFOPLIST_FILE = "Recipe Manager/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.wsu.vancouver.Recipe-Manager";
@@ -312,6 +380,7 @@
 				83B20B971EA70F9900C323D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

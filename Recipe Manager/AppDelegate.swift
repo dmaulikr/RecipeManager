@@ -9,13 +9,79 @@
 import UIKit
 import CoreData
 
+struct Recipe {
+    
+    var recipeName : String
+    var recipeType : String
+    var Ingredients : [String]
+    var Steps : [String]
+    let itemKey : String
+    
+    init(_ recipeName: String, _ recipeType: String) {
+        //init all vars
+        self.recipeName = recipeName
+        self.recipeType = recipeType
+        self.Ingredients = ["Ingredients"]
+        self.Steps = ["Instructions"]
+        self.itemKey = UUID().uuidString
+        
+    }
+    
+    init(name recipeName: String, type recipeType: String, ingred ingredients : [String], steps Instructions : [String], key itemKey : String){
+        self.recipeName = recipeName
+        self.recipeType = recipeType
+        self.Ingredients = ingredients
+        self.Steps = Instructions
+        self.itemKey = itemKey
+    }
+}
+
+let addRecipeNotification = Notification.Name("recipeNotification")
+let changedRecipeNotification = Notification.Name("changedRecipeNotification")
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
 
     var window: UIWindow?
-
+    
+    var imageStore = ImageStore()
+    var indexRow : Int?
+    var recipes : [Recipe] = []
+    let categories = ["Breakfast", "Lunch", "Dinner", "Dessert", "Drinks", "Side Dishes", "Snacks", "Soups"]
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        let archiveName = sandboxArchivePath()
+
+        if FileManager.default.fileExists(atPath: archiveName){
+            
+            let recipeArray = NSMutableArray(contentsOfFile: archiveName) as! [[String : AnyObject]]
+            var tempRecipes : [Recipe] = []
+            
+            for newRecipe in recipeArray {
+                
+                let savedIngred =  newRecipe["Ingredients"] as! NSArray
+                var tempIngredArray : [String] = []
+                for ingred in savedIngred {
+                    tempIngredArray.append(ingred as! String)
+                }
+                
+                let savedSteps = newRecipe["steps"] as! NSArray
+                var tempStepsArray : [String] = []
+                for step in savedSteps {
+                    tempStepsArray.append(step as! String)
+                }
+                
+                tempRecipes.append(Recipe(name: newRecipe["recipeName"] as! String,
+                                          type: newRecipe["recipeType"] as! String,
+                                          ingred: tempIngredArray,
+                                          steps: tempStepsArray,
+                                          key: newRecipe["itemKey"] as! String))
+            }
+            self.recipes = tempRecipes
+        }
+        
         // Override point for customization after application launch.
         let splitViewController = self.window!.rootViewController as! UISplitViewController
         let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
@@ -27,6 +93,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         controller.managedObjectContext = self.persistentContainer.viewContext
         return true
     }
+    
+    func sandboxArchivePath() -> String {
+        let dir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first! as NSString
+        return dir.appendingPathComponent("recipeManager.plist")
+    }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -34,8 +105,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        
+        //creates an array of dictionaries. each dictionary is a recipe with appropriate sections
+        let archiveName = sandboxArchivePath()
+        NSLog("\(archiveName)")
+        let recipesToStore : NSMutableArray = []
+        
+        for recipe in recipes {
+            let tempIngredList : NSMutableArray = []
+            let tempInstrList : NSMutableArray = []
+            
+            for ingred in recipe.Ingredients {
+                tempIngredList.add(ingred as NSString)
+            }
+            
+            for step in recipe.Steps {
+                tempInstrList.add(step as NSString)
+            }
+            
+            let recipeDict : NSDictionary = ["recipeName" : recipe.recipeName as NSString,
+                                             "recipeType" : recipe.recipeType as NSString,
+                                             "Ingredients" : tempIngredList,
+                                             "steps" : tempInstrList,
+                                             "itemKey" : recipe.itemKey as NSString]
+            recipesToStore.add(recipeDict)
+        }
+        recipesToStore.write(toFile: archiveName, atomically: true)
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
