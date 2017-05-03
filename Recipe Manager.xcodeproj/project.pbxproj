@@ -18,6 +18,7 @@
 		830508381EB5253400F2541C /* addInstructionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830508371EB5253400F2541C /* addInstructionTableViewCell.swift */; };
 		8305083A1EB5456F00F2541C /* addedInstructionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830508391EB5456F00F2541C /* addedInstructionsTableViewCell.swift */; };
 		832B4A5E1EB9558D005FEBA1 /* recipeManager.plist in Resources */ = {isa = PBXBuildFile; fileRef = 832B4A5D1EB9558D005FEBA1 /* recipeManager.plist */; };
+		832B4A601EB964F4005FEBA1 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 832B4A5F1EB964F4005FEBA1 /* README.md */; };
 		83AAA7F61EA9C4D200ADE0DD /* NewRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AAA7F51EA9C4D200ADE0DD /* NewRecipeViewController.swift */; };
 		83B20B821EA70F9900C323D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B20B811EA70F9900C323D3 /* AppDelegate.swift */; };
 		83B20B851EA70F9900C323D3 /* Recipe_Manager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83B20B831EA70F9900C323D3 /* Recipe_Manager.xcdatamodeld */; };
@@ -40,6 +41,7 @@
 		830508371EB5253400F2541C /* addInstructionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addInstructionTableViewCell.swift; sourceTree = "<group>"; };
 		830508391EB5456F00F2541C /* addedInstructionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addedInstructionsTableViewCell.swift; sourceTree = "<group>"; };
 		832B4A5D1EB9558D005FEBA1 /* recipeManager.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipeManager.plist; sourceTree = "<group>"; };
+		832B4A5F1EB964F4005FEBA1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		83AAA7F51EA9C4D200ADE0DD /* NewRecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewRecipeViewController.swift; sourceTree = "<group>"; };
 		83B20B7E1EA70F9900C323D3 /* Recipe Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B20B811EA70F9900C323D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				832B4A5D1EB9558D005FEBA1 /* recipeManager.plist */,
 				83B20B921EA70F9900C323D3 /* Info.plist */,
 				83B20B831EA70F9900C323D3 /* Recipe_Manager.xcdatamodeld */,
+				832B4A5F1EB964F4005FEBA1 /* README.md */,
 			);
 			path = "Recipe Manager";
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				830508261EB0899E00F2541C /* MainImageTableViewCell.swift in Sources */,
 				830508301EB25A8200F2541C /* addIngredientTableViewCell.swift in Sources */,
 				830507F91EB0658B00F2541C /* ImageStore.swift in Sources */,
+				832B4A601EB964F4005FEBA1 /* README.md in Sources */,
 				830508361EB5251F00F2541C /* addInstructionsTableViewController.swift in Sources */,
 				8305082A1EB089C300F2541C /* InstructionsTableViewCell.swift in Sources */,
 				83B20B871EA70F9900C323D3 /* MasterViewController.swift in Sources */,
