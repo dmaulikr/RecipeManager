@@ -17,6 +17,7 @@
 		830508361EB5251F00F2541C /* addInstructionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830508351EB5251F00F2541C /* addInstructionsTableViewController.swift */; };
 		830508381EB5253400F2541C /* addInstructionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830508371EB5253400F2541C /* addInstructionTableViewCell.swift */; };
 		8305083A1EB5456F00F2541C /* addedInstructionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830508391EB5456F00F2541C /* addedInstructionsTableViewCell.swift */; };
+		832B4A5E1EB9558D005FEBA1 /* recipeManager.plist in Resources */ = {isa = PBXBuildFile; fileRef = 832B4A5D1EB9558D005FEBA1 /* recipeManager.plist */; };
 		83AAA7F61EA9C4D200ADE0DD /* NewRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AAA7F51EA9C4D200ADE0DD /* NewRecipeViewController.swift */; };
 		83B20B821EA70F9900C323D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B20B811EA70F9900C323D3 /* AppDelegate.swift */; };
 		83B20B851EA70F9900C323D3 /* Recipe_Manager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83B20B831EA70F9900C323D3 /* Recipe_Manager.xcdatamodeld */; };
@@ -38,6 +39,7 @@
 		830508351EB5251F00F2541C /* addInstructionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addInstructionsTableViewController.swift; sourceTree = "<group>"; };
 		830508371EB5253400F2541C /* addInstructionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addInstructionTableViewCell.swift; sourceTree = "<group>"; };
 		830508391EB5456F00F2541C /* addedInstructionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addedInstructionsTableViewCell.swift; sourceTree = "<group>"; };
+		832B4A5D1EB9558D005FEBA1 /* recipeManager.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipeManager.plist; sourceTree = "<group>"; };
 		83AAA7F51EA9C4D200ADE0DD /* NewRecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewRecipeViewController.swift; sourceTree = "<group>"; };
 		83B20B7E1EA70F9900C323D3 /* Recipe Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83B20B811EA70F9900C323D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				830508241EB088FD00F2541C /* Recipe Editor */,
 				83B20B8D1EA70F9900C323D3 /* Assets.xcassets */,
 				83B20B8F1EA70F9900C323D3 /* LaunchScreen.storyboard */,
+				832B4A5D1EB9558D005FEBA1 /* recipeManager.plist */,
 				83B20B921EA70F9900C323D3 /* Info.plist */,
 				83B20B831EA70F9900C323D3 /* Recipe_Manager.xcdatamodeld */,
 			);
@@ -159,7 +162,7 @@
 				TargetAttributes = {
 					83B20B7D1EA70F9900C323D3 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = ECQ6ASBPZ3;
+						DevelopmentTeam = 266548894Y;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -187,6 +190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				832B4A5E1EB9558D005FEBA1 /* recipeManager.plist in Resources */,
 				83B20B911EA70F9900C323D3 /* LaunchScreen.storyboard in Resources */,
 				83B20B8E1EA70F9900C323D3 /* Assets.xcassets in Resources */,
 				83B20B8C1EA70F9900C323D3 /* Main.storyboard in Resources */,
@@ -339,7 +343,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ECQ6ASBPZ3;
+				DEVELOPMENT_TEAM = 266548894Y;
 				INFOPLIST_FILE = "Recipe Manager/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.wsu.vancouver.Recipe-Manager";
@@ -352,7 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ECQ6ASBPZ3;
+				DEVELOPMENT_TEAM = 266548894Y;
 				INFOPLIST_FILE = "Recipe Manager/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.wsu.vancouver.Recipe-Manager";

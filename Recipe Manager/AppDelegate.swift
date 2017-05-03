@@ -56,30 +56,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
         if FileManager.default.fileExists(atPath: archiveName){
             
-            let recipeArray = NSMutableArray(contentsOfFile: archiveName) as! [[String : AnyObject]]
-            var tempRecipes : [Recipe] = []
+            loadSandBoxData(archiveName)
             
-            for newRecipe in recipeArray {
-                
-                let savedIngred =  newRecipe["Ingredients"] as! NSArray
-                var tempIngredArray : [String] = []
-                for ingred in savedIngred {
-                    tempIngredArray.append(ingred as! String)
-                }
-                
-                let savedSteps = newRecipe["steps"] as! NSArray
-                var tempStepsArray : [String] = []
-                for step in savedSteps {
-                    tempStepsArray.append(step as! String)
-                }
-                
-                tempRecipes.append(Recipe(name: newRecipe["recipeName"] as! String,
-                                          type: newRecipe["recipeType"] as! String,
-                                          ingred: tempIngredArray,
-                                          steps: tempStepsArray,
-                                          key: newRecipe["itemKey"] as! String))
+        } else {
+            //jimmy rigging adding some data back into bundle for shipment
+            let uuidJG = "739D07BE-ABB4-44F7-9677-3E4D5E3E1158 "
+            let keys = ["Add ice to the glass",
+                        "Add the 1 part of Jameson to the glass",
+                        "Add the 2 parts ginger ale.  Now, drink!",
+                        "main",
+                        "Roll the lime, cut it in half, cut the half into thirds"]
+            let data = NSDataAsset(name: "GEHMain")
+            let url = imageStore.imageURL(forkey: "5C83AEE3-D905-44B1-8E1D-798AABE5EA01 main")
+            let _ = try? data?.data.write(to: url, options: [.atomic])
+            
+            for key in keys {
+                let urlKey = uuidJG + key
+                let data = NSDataAsset(name: urlKey)
+                let url = imageStore.imageURL(forkey: urlKey)
+                let _ = try? data?.data.write(to: url, options: [.atomic])
             }
-            self.recipes = tempRecipes
+        
+            let path = Bundle.main.path(forResource: "recipeManager", ofType: "plist")
+            loadSandBoxData(path!)
+            
         }
         
         // Override point for customization after application launch.
@@ -201,6 +201,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
+    }
+    
+    func loadSandBoxData(_ archivePath : String) {
+        
+        let recipeArray = NSMutableArray(contentsOfFile: archivePath) as! [[String : AnyObject]]
+        var tempRecipes : [Recipe] = []
+        
+        for newRecipe in recipeArray {
+            
+            let savedIngred =  newRecipe["Ingredients"] as! NSArray
+            var tempIngredArray : [String] = []
+            for ingred in savedIngred {
+                tempIngredArray.append(ingred as! String)
+            }
+            
+            let savedSteps = newRecipe["steps"] as! NSArray
+            var tempStepsArray : [String] = []
+            for step in savedSteps {
+                tempStepsArray.append(step as! String)
+            }
+            
+            tempRecipes.append(Recipe(name: newRecipe["recipeName"] as! String,
+                                      type: newRecipe["recipeType"] as! String,
+                                      ingred: tempIngredArray,
+                                      steps: tempStepsArray,
+                                      key: newRecipe["itemKey"] as! String))
+        }
+        self.recipes = tempRecipes
     }
 
 }

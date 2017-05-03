@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Ingredients</key>
+		<array>
+			<string>Ingredients</string>
+			<string>• 2  Green Eggs</string>
+			<string>• 1  Ham</string>
+			<string>• 1 Pinch Salt</string>
+			<string>• 1 Pinch Pepper</string>
+		</array>
+		<key>itemKey</key>
+		<string>5C83AEE3-D905-44B1-8E1D-798AABE5EA01</string>
+		<key>recipeName</key>
+		<string>Green Eggs and Ham</string>
+		<key>recipeType</key>
+		<string>Breakfast</string>
+		<key>steps</key>
+		<array>
+			<string>Instructions</string>
+			<string>Cook the Green Eggs over medium</string>
+			<string>Cook the ham in the oven at 350 for 2 hours or until nice and juicy looking! </string>
+			<string>Throw the salt over your shoulder for good luck!</string>
+			<string>Forget the pepper and curse your cooking skills while you eat the bland food...</string>
+		</array>
+	</dict>
+	<dict>
+		<key>Ingredients</key>
+		<array>
+			<string>Ingredients</string>
+			<string>• 1 Part Jameson</string>
+			<string>• 2 Parts Ginger Ale</string>
+			<string>• 1 Wedge Lime</string>
+			<string>•   Ice</string>
+		</array>
+		<key>itemKey</key>
+		<string>739D07BE-ABB4-44F7-9677-3E4D5E3E1158</string>
+		<key>recipeName</key>
+		<string>Jameson and Ginger</string>
+		<key>recipeType</key>
+		<string>Drinks</string>
+		<key>steps</key>
+		<array>
+			<string>Instructions</string>
+			<string>Add ice to the glass</string>
+			<string>Add the 1 part of Jameson to the glass</string>
+			<string>Roll the lime, cut it in half, cut the half into thirds</string>
+			<string>Squeeze and drop lime into glass</string>
+			<string>Add the 2 parts ginger ale.  Now, drink!</string>
+		</array>
+	</dict>
+</array>
+</plist>
